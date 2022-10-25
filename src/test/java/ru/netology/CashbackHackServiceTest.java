@@ -25,4 +25,24 @@ public class CashbackHackServiceTest {
 
     }
 
+    @Test
+    void NoNeedToIncreasePurchaseEquals1000() {
+        CashbackHackService service = new CashbackHackService();
+
+        int expected = 0;
+        int actual = service.remain(1000);
+        Assert.assertEquals(actual, expected);
+
+    }
+
+    @Test
+    void NoNeedToIncreasePurchaseMore1000() {
+        CashbackHackService service = new CashbackHackService();
+
+        int expected = 0;
+        int actual = service.remain(1001);
+        Assert.assertEquals(actual, expected);
+
+    }
+
 }
