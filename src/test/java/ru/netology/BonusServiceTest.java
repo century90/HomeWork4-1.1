@@ -26,13 +26,4 @@ public class BonusServiceTest {
 
     }
 
-    @Test
-    void NoNeedToIncreasePurchase() {
-        BonusService service = new BonusService();
-
-        int expected = 0;
-        int actual = service.remain(1000);
-        Assertions.assertEquals(expected, actual);
-
-    }
 }
