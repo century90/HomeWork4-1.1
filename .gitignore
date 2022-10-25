@@ -1,10 +1,4 @@
 # Default ignored files
-/gradle/
-gradlew.bat
-settings.gradle
-
-/shelf/
-/.idea/workspace.xml
 Thumbs.db*
 .DS_Store
 HELP.md
